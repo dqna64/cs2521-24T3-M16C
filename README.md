@@ -1,4 +1,4 @@
-# COMP2521 24T1 F09B Tutorial
+# COMP2521 24T3 M16C Tutorial
 
 Code, whiteboards, images etc from our weekly tutorials.
 
