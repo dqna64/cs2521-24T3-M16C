@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <base href="https://cgi.cse.unsw.edu.au" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+    />
+
+    <link rel="stylesheet" href="/~cs2521/24T1/static/style.css" />
+
+    <title>COMP2521 24T1 - Week 03 Tutorial Questions</title>
+  </head>
+  <body class="d-flex flex-column" style="min-height: 100vh">
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light no-print"
+      id="header-navbar"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="https://www.cse.unsw.edu.au/~cs2521/24T1/"
+          >COMP2521 24T1</a
+        >
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav mr-auto">
+            <!--
+            <li class="nav-item active"><a class="nav-link" href="#">Outline</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Forum</a></li>
+            <li class="navbar-text px-2">|</li>
+            -->
+
+            <li class="nav-item active dropdown">
+              <a
+                role="button"
+                class="nav-link dropdown-toggle"
+                id="week-selector"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="color: white"
+              >
+                Week 03 <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="week-selector">
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/1/questions">
+                  Week 01
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/2/questions">
+                  Week 02
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/3/questions">
+                  Week 03
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/4/questions">
+                  Week 04 (tutors only)
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/5/questions">
+                  Week 05 (tutors only)
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/7/questions">
+                  Week 07 (tutors only)
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/8/questions">
+                  Week 08 (tutors only)
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/9/questions">
+                  Week 09 (tutors only)
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/10/questions">
+                  Week 10 (tutors only)
+                </a>
+              </div>
+            </li>
+            <li class="nav-item active dropdown">
+              <a
+                role="button"
+                class="nav-link dropdown-toggle"
+                id="classtype-selector"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="color: white"
+              >
+                Tutorial <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="classtype-selector">
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/3/questions">
+                  Tutorial
+                </a>
+
+                <a class="dropdown-item" href="/~cs2521/24T1/lab/3/questions">
+                  Lab
+                </a>
+              </div>
+            </li>
+            <li class="nav-item active dropdown">
+              <a
+                role="button"
+                class="nav-link dropdown-toggle"
+                id="qa-selector"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="color: white"
+              >
+                Questions
+
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="qa-selector">
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/3/questions">
+                  Questions
+                </a>
+                <a class="dropdown-item" href="/~cs2521/24T1/tut/3/answers">
+                  Answers (tutors only)
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="container"
+      aria-label="Content"
+      style="flex: 1; padding-top: 4rem"
+    >
+      <header>
+        <h1 class="text-center">Week 03 Tutorial Questions</h1>
+        <h3 class="text-center">Sorting</h3>
+      </header>
+      <div class="text-justify mt-4">
+        <h4>Resources</h4>
+        <ul>
+          <li>
+            <a
+              href="https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html"
+              target="_blank"
+              >USFCA's sorting algorithm visualizers</a
+            >
+          </li>
+          <li>
+            <a href="https://visualgo.net/en/sorting" target="_blank"
+              >VisuAlgo's sorting algorithm visualizers</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://structs.sh/visualiser/sorting-algorithms"
+              target="_blank"
+              >structs.sh sorting algorithm visualizers</a
+            >
+          </li>
+        </ul>
+
+        <h4>Main Notes & Questions</h4>
+
+        <div>
+          Sort properties:
+          <ul style="margin-left: 1.5rem">
+            <li>Stability</li>
+            <li>Adaptivity</li>
+            <li>Time complexity</li>
+            <li>
+              Space complexity
+              <ul>
+                <li>In-place</li>
+                <li>Copy</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div>
+          Fundamental operations:
+          <ul style="margin-left: 1.5rem">
+            <li>compare</li>
+            <li>swap</li>
+          </ul>
+        </div>
+
+        <br />
+
+        <p>Walk through some sorting algorithms on whiteboard</p>
+        <iframe
+          frameborder="0"
+          style="width: 100%; height: 465px"
+          src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=tut03-sorting-algorithms.drawio#R7V1bc9vIsf41qkoeNDV3DB4tO5tsVXbXWe9JNnnZokRY4i5FKiRly%2Fn1Z4YkKGB6AF5EAA0O9GCLIAWS%2FfXM9OXr7ivx%2FvHlr4vR08MP83E2veJ0%2FHIlPlxxzrQ09j935dvmir2UbK7cLybj7ateL3ya%2FC%2FbXqTbq8%2BTcbYsvXA1n09Xk6fyxbv5bJbdrUrXRovF%2FGv5ZZ%2Fn0%2FK7Po3uM3Dh091oCq%2F%2BazJePWyuGkVfr%2F8tm9w%2F5O%2FM6PaZx1H%2B4u2F5cNoPP9auCT%2BciXeL%2Bbz1ea3x5f32dRJL5fL5u%2B%2Bq3h298EW2Wx1yB%2F8%2Fk59%2FG2u5M%2Ffj3%2B9Vi9CJx%2F%2Fec3k9j5fRtPn7VfeftzVt1wGi%2FnzbJy529ArcfP1YbLKPj2N7tyzXy3s9trD6nFqHzH76%2BfJdPp%2BPp0v7OPZfGZfdAM%2Faf6m2WKVvRQubT%2F5X7P5Y7ZafLMv2T7LKSNcbv5qq0rXXG4l%2B%2FUVGMFSojdXHwqw8ByV0VYd7nfv8Cox%2B8tWaMcIcL%2F49ghstHzaKO7nyYsT8lnEJSkxnriYhuLKJViUlWxKVAKnqIwTFX39EcjEplCKTXDkYktwik0jF1uKUmxWYrjFxkLngJ7at70ZT764d5xO7mfrJ%2FR%2Fn92RfzPNPq9eH9nf7rf%2Fr%2F%2Fq89wKqyj2%2FIXuievl2k56Z1%2FA5NPL5s%2B8G30%2Fm6wmo2l%2BP%2FutNrcsv429vP58%2BVUPagvPykN3%2Bz3Wn17cOAgn1lp6t738OBmP3R%2FfLDL7GUe36xs5q%2BFpPpmt1lJXN1fqg7vT82q%2B%2BR7rGy9Xi%2FkfmWc5NGRM2NORKs%2BYoFCDdECDRGMaxPevvNViMprdr%2BW7ZxEu5qvRajJ3kFyn1JPkFRcj%2B3252qpT4frn9Q%2BAwz6jv3Pr7lwAMKJFYTlzbznTlHCavv4YgA1XEBvOiWFNwXOA9XI%2BeChVNPt8DDyUsg837%2B0z94vReJK9%2FtUZl41S9ZswQtQk3vOMppWiZIk1E1jHJ1ru4iITnbOg0IsOp1fobHb0ojvgGOzIS0QvOqQOtrO2TOFYSBCKTgLRSXi8VxrDd1Y62aKv5rDQkhSNMQoAUgGARKvGsYJRkID9daEAcaP2bD4IANIAIBYPQLIHAMGAmIgGIMHtFocQEwMwUdFgIilOTEIe4ymRvO9nSweLdfI5%2FTRfuGjeaDx6Wk2%2BZLNsubQPb7Olu3o3WmZxx%2BNECjTBOsisPpTAW1ULfYA3vHwYPblf754X0283i9HdH9nqkFhQnl11j6aj22z60QKxDQ95uP7de3qHb64Hi40wahThNfSUni2cZwgzPoAp0fUABi18IpLGIIRe%2BQSusFNieOcNsI4nC%2BuEbe48sxvHw%2Fn8sCRVVUFXZqgmKpG1S24XqSsF8FRjiMFgwO%2BNIbaLuVbHVkPIVOF7DsSMIdoo%2FDDBwMP758X6i%2BcXHWvH3Wd9Jq4zV3GcbJITnlTHPozcd8yxUCCkwWMOJ9tAUkaoqHSwdJKSovvVdThJQ2cYgxSF7pcUkVI4eL%2BkCH1MDFLkpl9SxJlHdIl05JJLoOMUT9yJG12r5Ubuward2EcCPSSo5heLlewXVtA30tFgJbTy6eDo8IFOkYkGH0n7tZaiTv9y%2FGsp5JWeEpO%2Feb51IBwRkL9dDJTZCkOT7zM0d0VcLWkJ9Lrjiu9ywng5WphwTUQe0%2BkyRJgc4MvHmj4RjJGEFVZSeTNWKWSmh3InTLMGkycJDCNEFYpXdiGJzheX0eLb9KfkJfn0408%2F%2FEf%2B8uXj%2B5%2BvGa9OWd%2BeWldi5RWuK%2FlxZM9L%2B4J%2FPE%2Fu%2FtidpPuKTG5jOy%2BF8VLaUlo7SxRi%2FUBvmGkoMBPWGjFktKu3ZKlJqiu3ZCkMJSypwTK8QTeGpTyA%2BhsrlsraqSX%2BsQelpoQfhl9qDd4zHLBhCAMH7NG1gHDPpne78%2FD1otDrH7i308qNPBJf2O7SdVx1KbUiEihLU85whaJUn%2FatKQqLXlGMrNtUMOiJCZ3vLesJj11PHPEYu55Ul663piciej3R%2BPWEd68nMnY9caR57HoS8kVa1hMVvZ74hixCPYFJN09PjoJcRw%2B5EYSnuCGvzuOdAnkSO%2BSKlyE3CCEPUWFPh9xED7nGD3ko13c65GnskGuKHfId9QwZPda12eGFKL7X9EvKNCS6pvixFaJDynLXPRAdTmq7a7ODXnRI%2BewGv%2BgOyZt21GaHI5QWzpNBe%2FXlvrOEQXI4Dwal8UsO57mgOH7J4TwWZA%2BOBYnzWJBdHwtBOiEHsoqHb%2B%2BaRYHe%2FArSCFul2MNYbExFenv62nYNDjShIqr04sjBgbZGPGVergwPNTgMHsrwVL5UdCTFg8670fVCjsyvyYeb57%2BPXr776bfrT9eB0vDTyrr%2BNLtmf75ynE2XKa57RAiBz7g3oD%2F9aXal%2FsL%2FHHWZl3Zp40KLKFbSmECpQ1PdacL6Up0xfqO%2B8LCGsEE7itqRajBVCqpEsIqhMZUI175073btabWTqq6adISliDSmuafVDjophpiU3UtxT6sddFKEwQEUUoQV0OgkB5l38XjxzhdJyodTqrtqY1CBD6Q%2FxePI72mFlAYKaVtGB4ZZ4vHkXeFT4iOCbPXAfFg8QeNAkxZ0%2BFQXML6tScvX%2BWJoy3K4UUL3GSW7yV4t6QX00GJvy8Iobb11RBicQ7KWsRaO7%2BnLYvLwZUt9WSoAhD5nhH1ZqjBCtNBwDmcTaUryGZnfch2WULHbdWRlKNCLQFgKpbBwtmwXDKWwcNIReYJSWDgZiG5ckCzWNhp0goOuUDyuKjeCpMW0s%2FLh6TrSExgKDRX7UuERWpAEGyKBWdMsGkQkFcSklX4GBnigkxFRYoFjXDAcIBLP5EguMSJS3fbizXMjQxHQOOOdwpCksFP6M%2BxSE5olvmu82JImHOC9xhpT4zIhyvigpUQD0BocD1kBG%2FSj44pTu%2BqkyvGQnBpNZIIgkhaYNB5VxNMYQo3vU6EBB4YMhlGQ2%2FXFiE6qoxaMB4%2BuVgm24eHX3Ud8pJWd8iw%2BpbuO8hwyErqjWZkIhYWTG%2Bl4ugiFBb07FMLiKIWFM7PmWLcIhRX1pCstrYnrQ9J14CAwchkq8KVC4mpvqUEHCXQxIgpHS0VSsHF1Dgl0LOIKQePbt2CSM54QtKutFfggCblvZ6DgDpxbr0dZYioLGbiiIUc%2BbVURgpXVHjrRhqBduFn7mKEIQQfmb0cVgjac8ERVrixNkUQ5A7O3YwpBC2F3OC1fQ5kaK07Q2%2F2lOOJ3HYmuOtyOOzHt%2F6NHh%2Bvsdvm0%2FuvlajK7f54sH67cYOHV1yxzGd3b%2FGQdzcZXeRR8k%2BxdDmct2BFoYjWp%2BqyVAaofT1qNqKQ4Y3Wu75vUhXSD59FZAwZIrt1QVIozbud6RiMXHFJ2vEYvOKRMeY5ecEhZ8wa94KKuWdaC0NSHpOsYSQrDVlCZLxWSNTe%2FSELQ6OCBIayYQu%2BSGLCJdQwJpzCYFFPonZPigkkVOnhg0CimOLwk3CDe0HjOo2yAFz6ECrwSSu1lkhPZeSie0wPc3HhD8YYo7WOGIRTPKXSy4wrFM8IS%2F6yTOOK6nEJHPqr4O08JLcbfJVacYNxgYINvMeJEq5rQRbiQqVU2uH07AN%2FT5Is1SppaamOVmbEMLTXDb4XWDe53dsmYtLCkvCGLSiqyix92uaRY5FVKKSW6mCJOsOIUd5WSZtZ%2BMKoib9cFTBUDr6DzHE9LVseHloUGZ8wDyWXCAETtDpYNNIOOJ%2FbkyNF1Y89QAATd23iiT26UVxEgjAsI2nDpKBqA1k3IDkKlKcu6AhVoxcWTF3Qx28NAaXepBFppxpN6UhopKNAASG%2BjQWXf4FMMe1mgsymPByD8FkCgmWo8cw0UR7qtQQMgiQYU3bkBEI7ZIG3o4Ho0J2UeldS5FLqitnGsDR0USmFBKwaFsBhKYeEkhjuCAUJh4SSDux7NCIWFkwCucG7wOEnfCucGj7NVusK5wYcmRXUvLIlzg0faks1t8NXESwSCC9TAXzJ7QZoCe8HX4rVmI8iKR1%2FgronWCis40EmJi7JA7SJ6pSxwrDBB9yguykIxHk7BsdM13z%2FQcyAmxoIMmFCdQwLdvpg4Cg6SygwFAnSgnxkXQ2E%2FIO3SfpOYi5alN30HwwKB7nJUvAR0eECPPCZKQjBK0vWeZaCzD8MkFwsJ9iPeQLc%2FKgoCOjygpx8V%2BwAdHtWzw1zAo4RLXhbunrjeSPCdfYEVystaPoHGdJsy8fzCj6PJF1d394%2Fnyd0fV%2BVacvvxbwPV5JsPkV%2Bm19dX%2Fkyyg3Wn10V7IvUb2siUKcJB4LUYHwoNH2su6m2G4WPVvhZPSOItfmNSEkItABpj9qWmMeAOyE3HCpyU0OY0KUwwVaLWWJsAE0qSH7dzM7hz07tdiPv1otDrH7jD08qdOpITna%2FbJlUWU8tU2T266yM%2BRBBoWVFY9IpiPEWRCBUlRI5oWVF47IoieA8UJUQMaVlRRPSKovErSgpjY60rioxdUVzRI3pFCVH6W1YUFb2i%2BMYsRkWB8UNPUY7CXEePubVLaZFMiRBynGxw160%2FLaQ%2B%2FH5AqQmJrl0iaqAJOAbRuX796EWHkynuOvajFx1O3rjr2Y9cdCLQ8BqF6KQVXfGUMAhFh7McTfZB63AWp7lBQsAgwSAuaJBcbnlHQnSxvKOsvYoKSVIE1HRBoaUTVXlHfXNKi5MiNNCQvn2coFkVU6WHNKlrbv1a6SF9nLCsJ2jDxcPEFbq2tY49zrt2igWLmXXoulPW2lQYAIq5pZvrTplW00JR4MMBPvEUSwle394VBUAxt3eVtAcAxdxITPbhCIJ%2BajzluhL%2FERRoMArgsfeZPC2dTHYMzOn8ebzfMzqDCJVzGsvxF%2BdIAqmxEPnRNCe2asp6YfbYaDx6Wk2%2BTFb2k3%2F35vFk%2FV4LSgWA1BBI0676HxCw7VL9U0fPrm4z4wZJwB2k7bUAz%2BDlanQ7meZ6H4mGMy7rwUpCYCXt6jvePDatPCjVTqE7C7dLvEls3HLDm8HGLTe86WvUclN4c9clhlOCTnAh8mP3gpPoFe4A%2F6mjtHVRbt4EMgyCgx7U5SawNUlM5cBSxTSO3mpCxT71N61NYOPBKe4BwNIYwosJbI0VJ%2BhtxZTAlkQUTiBwdHfcdkIo6NPBs%2FtS0XHp61rDqnN0Ym775XLXuNGB%2FmlMmevyzgbshM7hCYzyiSlvjR4e6GzHlbVGvbcFphXFlbIuoaPQwRMqFGiqW1jeJWx5ZJcw9zbbWy381xayvz9kY%2Buk2fvPP9t%2F7AlqZUJ%2FHs3G88fJMhu%2FOWXc73ZjCZHe1i1kOR8KVJGF2o2p5nTxgHRarF2rhKCEssIx7O0ku1h9l33HxCGTi2JFUCpOqC4gqAGCJD%2B%2Bu2xDJoITlYY2ZG37rAlhxSE83nqXrlUk1JaWjQcEXYOGPmTGagpG7QjMzBqaj7UfXcGqHQj6Aw0dxzRW7YBRg6HNWPuhP6za8fYW50NvsbfHtrBqR4iFPjQUe0OIWROhKpnYSEBH2vCECsILTr8Xnnfx4YDo2uWOBWamYRCd0D0QHVIiO%2B%2BB6HBy2bnpgeiQ0tmlFV3dOYFBdoHZXhhkJ3ugdoHBWyhEJ8ui8zMjOGQH%2FdnL5WenJFWF0LVHlpcpksZVgUFZUfGzU05SqSq3HAcTwwATdOeiomenjMgCTGhXE3TAYmJnO3ZF4fj2alIsft27yIHxUvEwsbircqgxsFAABL3JeGjA1gQum3EGI0Ix0%2BhdKrG0yWEECLrGMVG18QMUmB8UE1kb%2FyEUmNsD3fyLBcg7hJgfwkKBEIwlBMjQgHz9t%2FlX%2B0eruf1nPFmuJrP758nywT66zVZfs8zxpjcE6uv552vhPvlsfFXmT9P%2FOgL3mr1d6sAFCNyQph0l6ZoZXjdkQelkDwFbhtifDWrWMDa4EssklYR5BHptAo53ADHOGyRdy0Bf4suNLRqikurYopE4oiEy0Is4rtgiI0pXxhbXMCGILcpAR%2BKYYotKu%2FOp0PrBg0mkKEYXSAEDI3IcjVGackVEtVtnmF1MHJoObVoOUsDASDyhK21PpZreHCaw07XqMUgBoyLx%2BHTG1VXVohMqu2oXIAmjInIUDULaONO6BiFJQr5RuwhBI1veRYOQMfiPoEDv9XhCv4lWPiTBRdPytgbN63gyjqkurxnfuHZrRvorqjuoqknz67jdSRUVm2DfJoI4daK5e5jPl9nVujmD%2BxJWxC5SQQixv7oTj97PM3f5NnuYrMOP8raBmGK%2FFUtbt8zv%2FZ%2FoIMmt7S044KdFdEgm1tDUIJy7hUhTCd2AluGJ2UlLNIjfOkgIFXj24KjdNOEN59i%2FetpFJ9AMPSofTRFVu7l17wEEuq7HFCZk%2B46fUJyjZYRi9tG0ooSZg1BpeWeL2k1TnOi6cweBHx3oJN%2Bkc6ZCztn41TmbOK7I58Wmlnrda89Z%2BYOX5nlphvBq6oebVhjq9qXaVSxI%2BLhU6oBWishUVqxzPCnpQJd7gEasHBzJUyI94HS%2BOvZxcNbD%2FxpD7YBq5lhRS%2BxWJ7yMQSoObnbIaYPNDmWgefTl7oCCJEnVDqipSYtkkAA4bW%2BFwX6wRbMn1%2BpXs2a9HoCRAxoD04mzY8aZtS8eJzPHhr1zVk7YYDnlHZ9nbmjn1FlTt8%2Br3GZaPbgLy9Gj%2B%2B%2FryGGTWfzc%2F6uJuxgxV9buE2WurJfQSvjhEe7G6rhlsMHtKQpSolWvtdGK8trTyKZUcsPsXquky7mMJ58%2FZ2vo6rRy4HRv7XpOFMOom6EK3NsjUOm3v5Vw%2FCSSQAVuTAgxa72H4l91GZiWAYLbezzVaYaqvUQ5CQBqNxIWKMCNCSC5J0VG8vYQ3QF0QG%2BqbDZ%2Bt1jMvzpApqPlcnK3luNosYKXg56wAyZ7max%2Bdb8TpZLt43%2BvH6cp2z7%2B8FJ48YdvhQcfs4U1bda6sLk2s99%2Bezu7R20v5Pfj%2BYXXG64ffSs%2B8m9ZCfhy%2Fry4yw7RciuS%2B2xV98rcEsnG91mtChUUIhRizK8tsqn1Xb9kpQ8c0pLtO3x0y6Ogofl2neskKxy7%2BW0233%2F7l6%2F6Bm6Wcu9m1Hhqu5EPuJPVorUVm79su4arP7XyPzWltZ%2FMGPA16%2F8gZfXvYH%2FZfOjXlbfD7g2LMVBs3fRilElaXowyOXoxvmHl5PqHZD0kTIDQl%2FEH6By6HgzgePq%2BxJnWQ%2BKtYmWSevVOUv8PzJ4FJOrfoan1ABOdEREEFDMERFVcVFwDm6FdqzuF6c14eGlKBdicDpWu%2BU6BYnB4elwqKq6ppDKVvhAOgALRhHgIaTxJSHG6vD9Oaw0R932l7va4qKnRMnFHT%2F1y6vwUgqGFeLhpQhmiTACVuhXU8nYHIwvxsNS4ZEQUBsmKAFTGX15dQaVogCodT5xbsD6dTCrXlihDqiI1e%2B0809pqmjzrH7MPP07vqfzrTy%2FPv0z%2F938%2FXkN4ADrLr5PH6Wgtk3Xk5tNGlmfi73BKiSk3tM01tCiTMHenRirbN%2Fw5u1ttmDXFdyy%2FXeD9QlEbPx4ymlrVnI1W2Y2LVi0BFMfFFH5%2Fpz7%2BNlfy5%2B%2FHv16rF6GTj%2F%2B8Fq3MnalVjKOATAqHiFeSalJS5F8E9L6pfHZYsqEhX0gly3SvJHvAloJGsrxPkuUHZL%2BwSNb0SrCtDFo6j2ClFWxJdpgFG2itdRq97OgBjLyiIuXm%2BXbDUvvk%2BoxyejtyySdO%2F%2BQIcqPx6MnlY%2F5sL1gBPMzHZ3vfZeWcv32Xe0%2BCO4%2Fei7RO70O1FU0VuwQ1PdDBB6B1IRT9Mx29jJXaiXtBh2uuLN7w6T10fqYZEWeg8wcxZoFOZz3uu3mm84iTtEj7T8u%2BHHMVjrTwfAJxbI75H4Yx0A%2Btx305zwOjcvz4AkwKO4r8gtqNnMnkVnUmdyr3WYZNxZ3ClmEgiBs3fHaJ1cHXXj44jBcHePU2P3Ku2EGv1htkwUADNSr8uDfKExtgkH9h4gaM6foF1zVjJhSrPzJ6APto0LudEfh6Uej1D4wy0MpwQsyKU3%2ByqpQUn8zZcp2pUXVZcmtqxAY1OjqkjU2NqiOvrakRH9To%2BJwTNj0KtR5pWY%2FEoEfHZ4Wx6VEod9myHslBj47nbXSnR8Gvl3utqAhLO3bSmxhLb8s%2Fdcdn2UFyLpVLcCWxg83rsYp2z6mATbTd8dtOEG294YZNtAd0%2BkMj2nrXCptku2MLHS%2FZeroQNslCZ%2BOykkKnbDou6FkCzXh9OmAuttVA9SXNFTjXoqsNVBtciYbA5IHLSqSfcBypWo6lIjpBhB9knvW2svBs%2FkWvFiB0aS8rtX6KFwNPPWSrLuRvn8Js9gnJOQf5yqcgX2aHzPOZuaysL4GQDDOtaggMG1waWfQEnBgxRZqhx%2BLmmggNK%2Fk7pBkm8HS9NK7o8SgqTWgK2aAoUAxmH5ID4kyXzM4%2F4QRmjOhyy4YdZ7MlDn4YSQT0iChYNid5vcVEkd9FwtpvxXoO3XGz1wQBQSIKns0J7jfDrTkIKBF80JxwtBS56iBgQUTBpjkl5IBbdQwM0w4EGhyqw%2F3GPt2pTvgbHcANaZ0zoyn0JprjzITlcgCxo2m5MMLLctl1%2F%2B5QLod4y43ri19H3Kq%2BhGNBHRKB1LEiZKmbh1LYhcrVTgEtazXVf0hEBo8sFW5Zdkj1OV6WDLcsOyT3HC3LBLcoD5haikaUInXDJSpT%2Fl2LEvqNF8bROH4f0YLoYo6%2FHKw2HdfLB9y1C6OyHY2YkbW7VdeAwUTfhbEwjgZM4gaMA8Dg%2BRIXYIx7e6LAhRiMQ1xWS4PjEeMUN2Ihj%2FcUltP3s6UDbe6GAm%2BITvGRmo63SQ3RRaJimWbBKaFFgxWyLNJWVSV2isXxx2tClC4A6A1g4ylR9fiGol%2BSNtf%2FMDBg%2BOIYbcejSAkrMtoSL27JtXUsZS2MLVPaAmOIL47SdrxzYggtjtXg2FFkgTK098%2BLtWDyi5yu5u4%2B68N3nQOM%2BDSVjOjidutRT7V3nAKAWSji01zO7oCYbus5GG3sZgct0pazUwdEaFuXTKq7z9odEG5tWC7WYK0pu%2BESQWozRMBpWUhprZCSVntJBIUU6M3aspBc8rJsDQtqDa3Q6LF2U8Cqu%2FTQDpUj9ilrk%2BDND6nu8kPHy5Jp3LI8YF%2FDI0uOWpb6gO0PjSwNblF2NwvqeFFKK8piCljiEuW5Rul8yqZbdzvaUOwJusHKJeNeeMDNcSyEgGBtMqMBXWksFptwoCuXFqg7AUI3c70QwinzBRBGeBKYLru0ON3xKKpkX%2BkpMhQZhYvxtI377nmx%2BGEy23D5hz06tEcX5h4fHd9L2tyhGTvEx77gdNkJXoOyK7cMqr0LoawQSuFwuYcKlFW6u1MDyIZs3qFCGcUOYQ%2BPUkK97C2pjtkWjFUfFUNNcreqY3zVQaY51e2IhprkbjWHceSqU83xGmqSO1YdjVx1EIw8iqIm%2BZTcD2rV0dDSuayClpMsjLpIfteAQQPjsupZTvIm6vIFXQMGj%2FXLqmc5zRLDvMTgaQpjQnEhtucU6xyxS5%2FReZrJimONBb9QoFQeHmNoMtIpJUVOMtUlWTpKSlpgtMKso93v8sBAKdfxevnsAg50vQXybYGdWRCaV1IlhCucgQraHaeMBUb9tqWTO7iO4i%2BKwpZsyluymyhSeFZyIN1WWROM9Um2jvbYJ9l2R4Y8QbaqX7Ltjhx5gmxZv2TbHVnyeNkmvRJtfnL2QrTeSZbiluylj3k5Ydvhsm5tuDEv9Qi2Gy3Pl8LFxjyPR1DKmhWIDr9ACHQUOYD1p9N%2BBJuqqaxAEDqn8HiKC0BO%2B7WHwhipvI0cwj2eDbpFWD3B462FDFYHRreT6WT17eLpsWe2dr0KBsHhUNHG6t8r1OSQMu8LJsiesA9Ii3ABYFMOF18n5binhIHPYNxTMqs3jaEMwxyXVqlymlVcqHEwvJxD2czXen1eCAhk20UOgbr6S6tVOR5HzUoVR14DfIwwBiv%2Fz1arElGF4QmLnpYz3d6aV94BDZWl3foVMVQ5oNWkuqCKQubQCRgUG0oecOiRqY0MoFOkoQICqyLtidOj06ShIAKtJul%2BadJQH4FVk%2FbEvdFpEoKZo2rQpKAmyX5pEoyryrvYIaznNHaXQQlzmCGCkEeAhmSTKmJ4JR983Vav0OZcw7xDByRmRqEz8c5%2B5dH9uqfy5DFb752PT9PsxSWb%2BtpZ%2BYTmpQmRxSbK5ZCm4IE2uEy3uThYAgNTn3ZZwXiAkpSoQh8kr9uVUAkEqqkAYgVOMPDzC1hYW4Nj%2BTSaBU0caKRUx5orb7LeKq%2BXm73SWUpPi6zq3qNHt5HObpdPpz3O7afNh9nc9iZbrtZvfPQnr%2F76aL9sxeV%2FzRfLVdWfVMjmyI9Ddzv4yVINfbBIthNGWHE78ZozaxnY91lgP0ma20%2Fgkb0xfyI9qaUgvDg%2FpkwGEKE24yyU%2F2%2FwBIBxtnfj0dNqsvew3mPcnun8pGUvQGgGRWbalVh1POk5xIpablhRT4v5k9PhbFmbiX2%2B6nUe9qQm86WGgb6NJAJLRLULOHT1ojRmOaHVQ%2FJcd92ujVkYnhuM2cGYHYxZrNtJaa6i9LaTQKv3to1ZSKeL2ph109mL3Xu9SZgiFHZq15gNzPtGZMwykk9i2Cm56tqYDQzcBsZscWzsYMzWYkwpMbLaRmKBgF%2FLxmxgYHekxqz1LKqAYizgdbRrzAbGdA%2FG7GDMDsYszu1EEMYrjVm2a1vUnTEbGCIfuzFbnEMDRpiE3I%2BWjVkYZ0RkzHLikwhCxk3Lxmx1UevOEr15vnUaOViy%2ByxZRripNpBoGlgfrRJwWGCCOgCnoSZ3eXDaBPb1NMS0UPoMYjBafJv%2BlLwkn3786Yf%2FyF%2B%2BfHz%2F83VglwBSsLeZPC3XQshrdafz5%2FEpO8UeKA6vg6YlfQo5wkHHKG1KjtAtAmJsiM11ivTStC4Wn1DCihkVDmTbVNekoGhDNSF4Rav6JNoD%2BnwiEi3rk2gP2FfxiNa1AOqPaLvrBnqKaK2nUNP9GplooU2kboFw%2B8wrP2lLN6QY6%2FMoJYk6BcFz2LVhgw4ieFn9zRrY3nAhCNOGLHoApSwByI7Er6nqnCB%2BgamgF9Zi8CTjrU%2BbaGD8ZxI7gpKKtyHY7iIMOeTH1VpyWGvpJcHyCz9ki3VR0aaB3S7odxsIBJ5Yc4koFng%2Bw9juCCUVUiUmZxJqXxfSocaM4eA8Tg%2ByS%2B5ed8o2zzXxKLjXAV5PcKBzmpLcOTo%2FlDDScWkt6k5ZgtRY39QrA2HOI31NbQVqOZtraBbGDoZSLq0t3SnHsTEkKaYgE%2Bwwdjdo5ATxqtQL25SNHVxRmw7njJwiWtUn0XY3ZuQU0bIeibbDMSOn7Le9CpEHBo1glq3olWyha3lZAyNP2Xi0IMcGVVuNBwTmflzW3JaTTEj5trB4uwhe%2BtyPUxD04%2BIKNYIXP%2FfjJJPND4Mhi4UHRn2ksYOmKfbjLvLBG6csRF7nO6GIYgYGbQBU8Vj1jgonvQk1Cpkp3yvv3hHgkAs0OHsCrUAdLwS7QHvlyK9rvJELFHrviAXqjhNZPJQMbuFCL3vgDzrqS1IkTvhTYXDZ%2B4HO%2BQODMLixIcMNetcDb5BKC1sVb%2FAABFt12gT0tAfiIE%2Fs7ol74UFfO3qyoNDijWdeuyuvV4619sfM4bYJe%2BVja9on2cpeudtK90q2vfK8Fe%2BVbHvlhEtD6%2FKk6IQLnfDo%2BQnaTYpCbYJI6HZHT1BQXNVuasgQhA443NUiQ1AaVUdQQAdhwAOPPn7p%2BLpH752teuASeuADRUGiP%2FGg0%2F3oCulcZy1CSOwAciW8wBdnew3NtE0A1QEeUjYbv1ss5l8dStPRcjm5u6qgkzhYXBfBX93vRG0f%2FXv7Ovf7h5fCyz58u6pqxFWPwHL%2BvLjLar5WLq%2FVyCrj6gAFzsb3WS2iBYBCTanya4tsOlpNvpSD9yHUtu%2Fw0SlxQWFSu74LQTcv2J2GlSe%2F%2F0Ys21u%2BKgZ4FyFr30XWv8tGpuBd1uq3E9gbNLJXfmWAIGMdlbL8DjpYm2ti1K%2FeW5Afg02evWq4FaDHYJNnv7pswSQyNnn2qrXWHnIMNtkOvbWO5sZwrU6AsDmDF3osQ4I%2BuKvhgm3oqHUkM2Y%2FgK1GCnLu%2FUBJqyXGIFt2GoYHBl5MPS8G27o7wP07MsAzs5%2BrEOFxD%2F9dfO41xrN%2B1FiQJ4%2Fd7A3y5C4bmiAPJdo7bUU4rnt8ZMfdupqzZerfpuHQjg65zsc1dGOwoRu92zXteb0o9PoHNn6jb2%2FkdpG72ro9Z3WPY4kr76CrBzC3pkls0KSwJhlZk%2FHHpkjV82JaUyQ%2BKFJFI8I%2BKVKoWrtlRRKDIlVY7H1SpBCPvWVFkoMiVfRP7pMihUj7LSuSGhSpuulPXxQpgaE7T5GO0gk96EQFz1KUmmenCrVSVE8NP0UpkkEpKujTZaUwqHWCn1UnzKATlY0a%2B6MTofjz6TqRDjpR2c2sPzrRKwqVBkMukLFSkl4xqFSKXZy9IlAphV2c%2FZoZAFp5YhNnr9ocyMTU%2BTTYZAsjJkPVLeVEoWYWGRieGKpuud%2FcFhtoMHwA97HIQHMBoJrpfNgQhM7%2BUGerVHL8btnubGHojw91thL9GVfNnBpPvuRBkNF49LSafJmsvhWiJIXnB5xJ0Rb1KE7cWGPU1EGetAr5AW6ovc3kaemEtmsEP50%2FO5N%2BjwvQgIxziiFVBIaXmAmIjjFJTFPSg17ncjW6nUzd4ljnNu9GM%2FvvrZv5OnaKlw%2BEXeSr5cERYr%2BLfc3wtLxmVHnRsP2hRdaqD5dXzxdXyfg%2B%2B7R96GY9zu%2Fns9H0L69XPYLz62v%2BPp8%2FbZH4PVutvn3aIONAett62sttNofWpb%2BRi6zspndQvGMPRfjdYjH6VnjZVrPf%2FL6vqrB5h7PykQ2MpQzdKwoYibrWTdg6WRhoxvZx4efti%2FYWNZx%2Fh3jbvgvdQYAHorgkdZN3q0rnhD%2BtEGh2u0davzo46D6JtleZSMH7JNpeZSW5KYvW6w%2BKTba9SlFyaWWbVPrd2GQLPcfoLUGRcOsFVm88qGJlKbTqoweQp6L25MAFIEzDDgCqHgHIKEzJRo%2BgEG4PxQ0bTMpGD5tk%2BGHrleut1643ZguQ0V453ErjF2iv3GzF8Qu0V861ND2KWzDaK%2BdaSvzKOnjUcI9J8JsVgx8NV9vaj8YN2%2BA9Q9h65T2zwXsO5KLR75ds8J6hs4ffe2YHeM%2FHNUg8Vpxo2hIaoljlJslraUGHNyhM6zjuwp%2FDV36XhvsTMnb2Zpk91YWQeXoeBVA0rasIa00BKmA4oLoOE%2Bl2%2B2ySmww5NyufY1ekYSYJyYdsFTXGqLfvrBXfA1qiG%2BG4mv%2FHp6kbAfQt9hMyEdZ%2F95iQOc%2B8iB5v6FB8N7peyJH5Nflw8%2Fz30ct3P%2F12%2FemaB3y%2FfqwDK0xZEqYJyDLES2RCElOzT75RnnAp%2FDJ59FeCz0C%2FyZarNVndf8L%2BP3p0Up3dLp%2FWj%2Bm%2F5ovlKn%2Fl8mlNbof9vWBDjUKlyOavtpcPe9tjH9N3FszRfXbmDxr5FqISknozvNwoaVo4RjlcBSywCpIz7Cjhr5VC7wjgtvw6eZyO1tJa2pN%2BtWXdhu0odqyYpBWJ11JL0sDuQHVKcquktEOkvDnpHOKENL3fpkeLVFuXQVfGVZTf1ByBTRLg0l66TXI8rAm3sFR6gmpv04bGjJWKL3hAdhHh4kmolTI%2FPSvWqBlT8SVh2nEwYwYz5kzrQWqiyjEHuwkRXtiIch5BA2aMfbiYO6Re4wl2L3j4YT7O3Cv%2BHw%3D%3D"
+        ></iframe>
+
+        <h4>Questions</h4>
+
+        <ol>
+          <li style="margin-top: 0.5rem">
+            <p>
+              Consider the following simple table of enrolments, sorted by
+              course code:
+            </p>
+
+            <center>
+              <table
+                class="table table-sm table-bordered"
+                style="font-family: monospace; font-size: 16px; width: auto"
+              >
+                <tr>
+                  <th>course</th>
+                  <th>name</th>
+                  <th>program</th>
+                </tr>
+                <tr>
+                  <td>COMP1927</td>
+                  <td>Jane</td>
+                  <td>3970</td>
+                </tr>
+                <tr>
+                  <td>COMP1927</td>
+                  <td>John</td>
+                  <td>3978</td>
+                </tr>
+                <tr>
+                  <td>COMP1927</td>
+                  <td>Pete</td>
+                  <td>3978</td>
+                </tr>
+                <tr>
+                  <td>MATH1231</td>
+                  <td>John</td>
+                  <td>3978</td>
+                </tr>
+                <tr>
+                  <td>MATH1231</td>
+                  <td>Adam</td>
+                  <td>3970</td>
+                </tr>
+                <tr>
+                  <td>PSYC1011</td>
+                  <td>Adam</td>
+                  <td>3970</td>
+                </tr>
+                <tr>
+                  <td>PSYC1011</td>
+                  <td>Jane</td>
+                  <td>3970</td>
+                </tr>
+              </table>
+            </center>
+
+            <p>
+              Now we wish to sort it by student name, so that we can easily see
+              what courses each student is studying. Show an example of what the
+              final array would look like if
+            </p>
+
+            <ol type="a">
+              <li>we used a <em>stable</em> sorting algorithm</li>
+              <li>we used an <em>unstable</em> sorting algorithm</li>
+            </ol>
+          </li>
+          <li style="margin-top: 0.5rem">
+            <details>
+              <summary>Motivation: Why do we care about sorting data?</summary>
+              <ul>
+                <li>
+                  <p>
+                    <strong>Searching</strong>: Enables binary search, faster
+                    than linear search
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Ordering</strong>: Arranging data into a desired order</li>
+
+                  </p>
+              </ul>
+            </details>
+          </li>
+          <li style="margin-top: 0.5rem">
+            <p>
+              Compare the performance of bubble sort and insertion sort on the
+              following types of input:
+            </p>
+
+            <ul>
+              <li>Sorted (e.g., \([1, 2, 3, \ldots, n]\))</li>
+              <li>Reverse-sorted (e.g., \([n, n - 1, n - 2, \ldots, 1]\))</li>
+              <li>
+                Sorted, except the first and last numbers are swapped (e.g.,
+                \([n, 2, 3, \ldots, n - 1, 1]\))
+              </li>
+            </ul>
+          </li>
+
+          <li style="margin-top: 0.5rem">
+            <p>Merge sort is typically implemented as follows:</p>
+
+            <div class="highlight">
+              <pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">mergeSort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">A</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lo</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">lo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">	</span><span class="n">mergeSort</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">);</span>
+<span class="w">	</span><span class="n">mergeSort</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">hi</span><span class="p">);</span>
+<span class="w">	</span><span class="n">merge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="n">hi</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">A</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">nitems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hi</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">nitems</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lo</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="c1">// scan both segments into tmp</span>
+<span class="w">	</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="n">tmp</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">];</span>
+<span class="w">		</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="n">tmp</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">];</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="c1">// copy items from unfinished segment</span>
+<span class="w">	</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">mid</span><span class="p">)</span><span class="w"> </span><span class="n">tmp</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">];</span>
+<span class="w">	</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w">  </span><span class="n">tmp</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">];</span>
+<span class="w">	</span>
+<span class="w">	</span><span class="c1">// copy items from tmp back to main array</span>
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">hi</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tmp</span><span class="p">[</span><span class="n">k</span><span class="p">];</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="w">	</span><span class="n">free</span><span class="p">(</span><span class="n">tmp</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+            </div>
+
+            <p>
+              Suppose that at a particular point during the execution of the
+              <code>mergeSort</code> function, the array <code>A</code> looks
+              like this:
+            </p>
+
+            <div class="highlight">
+              <pre><span></span><span class="p">{</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="p">}</span>
+</pre>
+            </div>
+
+            <p>
+              Show how the call <code>merge(A, 0, 4, 9)</code> would merge the
+              elements of the two sorted subarrays into a single sorted array.
+            </p>
+          </li>
+          <li style="margin-top: 0.5rem">
+            <p>
+              An important operation in the quicksort algorithm is partition,
+              which takes an element called the pivot, and reorganises the
+              elements in the subarray <code>A[lo..hi]</code> such that all
+              elements to the left of the pivot in the subarray are less than or
+              equal to the pivot, and all elements to the right of the pivot in
+              the subarray are greater than the pivot.
+            </p>
+
+            <p>Here is one possible implementation of partition:</p>
+
+            <div class="highlight">
+              <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">partition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">A</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">pivot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">lo</span><span class="p">];</span>
+
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hi</span><span class="p">;</span>
+<span class="w">	</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">l</span><span class="o">++</span><span class="p">;</span>
+<span class="w">		</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">pivot</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="o">--</span><span class="p">;</span>
+<span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">		</span><span class="n">swap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">);</span>
+<span class="w">	</span><span class="p">}</span>
+
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pivot</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">l</span><span class="p">])</span><span class="w"> </span><span class="n">l</span><span class="o">--</span><span class="p">;</span>
+<span class="w">	</span><span class="n">swap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">);</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="n">l</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+            </div>
+
+            <p>
+              Show how the call <code>partition(A, 0, 9)</code> would partition
+              each of these arrays. What index is returned by each of these
+              calls?
+            </p>
+
+            <ol type="a">
+              <li><code>{ 5, 3, 9, 6, 4, 2, 9, 8, 1, 7 }</code></li>
+
+              <li><code>{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }</code></li>
+              <li><code>{ 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 }</code></li>
+            </ol>
+          </li>
+
+          <li style="margin-top: 0.5rem">
+            <p>
+              Consider the following shell sort algorithm (based on Sedgewick's
+              implementation):
+            </p>
+
+            <div class="highlight">
+              <pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">shellSort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">h</span><span class="p">;</span>
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="n">hi</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lo</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+
+<span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">h</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">hi</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">			</span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">			</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">			</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">lo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">h</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">h</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">				</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">h</span><span class="p">];</span>
+<span class="w">				</span><span class="n">j</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">h</span><span class="p">;</span>
+<span class="w">			</span><span class="p">}</span>
+<span class="w">			</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="p">;</span>
+<span class="w">		</span><span class="p">}</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+</pre>
+            </div>
+
+            <p>
+              Describe how this would sort an array containing the first 100
+              positive integers sorted in descending order (i.e.
+              <code>{100, 99, 98, 97, 96, 95, ... , 1}</code>).
+            </p>
+          </li>
+        </ol>
+
+        <h4>Revision Questions</h4>
+
+        <p>These questions are intended for revision.</p>
+
+        <ol>
+          <li style="margin-top: 0.5rem">
+            <p>
+              Explain what these properties mean in relation to sorting
+              algorithms:
+            </p>
+
+            <ul>
+              <li>Stability</li>
+              <li>Adaptability</li>
+              <li>Comparison-based</li>
+            </ul>
+          </li>
+          <li style="margin-top: 0.5rem">
+            <p>How many comparisons would be required to sort this array</p>
+
+            <div class="highlight">
+              <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">};</span>
+</pre>
+            </div>
+
+            <p>for each of the following sorting algorithms:</p>
+
+            <ol type="a">
+              <li>selection sort</li>
+              <li>bubble sort</li>
+              <li>insertion sort</li>
+            </ol>
+          </li>
+          <li style="margin-top: 0.5rem">
+            <p>
+              It is easy to check whether an array of integers is sorted. A
+              trickier problem is to determine whether a sorting algorithm
+              produced a stable sort. Assume that the array is composed of
+              <code>Item</code>s with two fields, as in:
+            </p>
+
+            <div class="highlight">
+              <pre><span></span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="n">Item</span><span class="p">;</span>
+</pre>
+            </div>
+
+            <p>
+              Assume also that the array has been sorted on the
+              <code>Item.a</code> field.
+            </p>
+
+            <p>
+              Given the final sorted array alone, you cannot determine whether
+              the sort was stable. We also assume that the sorting client keeps
+              a copy of the original array, which is available for checking.
+            </p>
+
+            <p>
+              Given the above, write a function that takes the original array,
+              the sorted array, and determines whether the sort was
+              <em>stable</em>. The function has the following interface:
+            </p>
+
+            <div class="highlight">
+              <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">isStableSort</span><span class="p">(</span><span class="n">Item</span><span class="w"> </span><span class="n">original</span><span class="p">[],</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">sorted</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+</pre>
+            </div>
+          </li>
+          <li style="margin-top: 0.5rem">
+            <p>
+              Write a version of selection sort that sorts a linked list. The
+              sort should modify the original list - do not create any new
+              nodes. The function has the following signature:
+            </p>
+
+            <div class="highlight">
+              <pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<span class="w">	</span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="o">*</span><span class="n">next</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="o">*</span><span class="n">selectionSort</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="o">*</span><span class="n">list</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+</pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </main>
+
+    <footer class="mt-3 py-3 bg-dark text-center no-print" data-bs-theme="dark">
+      <p class="text-muted">
+        <small>
+          <strong>COMP2521 24T1: Data Structures and Algorithms</strong>
+          is brought to you by<br />
+          the
+          <a href="https://www.cse.unsw.edu.au/"
+            >School of Computer Science and Engineering</a
+          ><br />
+          at the
+          <a href="https://www.unsw.edu.au/">University of New South Wales</a>,
+          Sydney.<br />
+          For all enquiries, please email the class account at
+          <a href="mailto:cs2521@cse.unsw.edu.au">cs2521@cse.unsw.edu.au</a
+          ><br />
+
+          CRICOS Provider 00098G
+        </small>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- math -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"
+      async
+    ></script>
+  </body>
+</html>
