@@ -8,16 +8,6 @@
 
 static void visitBstNode(struct node *t);
 
-// Prints the in-order traversal of the given BST
-void bstInOrder(struct node *t) {
-  if (t == NULL)
-    return;
-
-  bstInOrder(t->left);
-  visitBstNode(t);
-  bstInOrder(t->right);
-}
-
 // Prints the pre-order traversal of the given BST
 void bstPreOrder(struct node *t) {
   if (t == NULL)
@@ -26,6 +16,16 @@ void bstPreOrder(struct node *t) {
   visitBstNode(t);
   bstPreOrder(t->left);
   bstPreOrder(t->right);
+}
+
+// Prints the in-order traversal of the given BST
+void bstInOrder(struct node *t) {
+  if (t == NULL)
+    return;
+
+  bstInOrder(t->left);
+  visitBstNode(t);
+  bstInOrder(t->right);
 }
 
 // Prints the post-order traversal of the given BST
@@ -59,12 +59,12 @@ int main() {
   tree = bstInsert(tree, 4);
   bstShow(tree);
 
-  printf("In-order traversal:    ");
-  bstInOrder(tree);
-  printf("\n");
-
   printf("Pre-order traversal:   ");
   bstPreOrder(tree);
+  printf("\n");
+
+  printf("In-order traversal:    ");
+  bstInOrder(tree);
   printf("\n");
 
   printf("Post-order traversal:  ");

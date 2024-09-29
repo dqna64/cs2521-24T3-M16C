@@ -14,6 +14,22 @@ int bstCountInternal(struct node *t) {
         return 0;
     }
 
+    int nLeft = bstCountInternal(t->left);
+    int nRight = bstCountInternal(t->right);
+
+    if (t->left == NULL && t->right == NULL) {
+        return nLeft + nRight;
+    } else {
+        return nLeft + nRight + 1;
+    }
+
+}
+
+int bstCountInternalSimplified(struct node *t) {
+    if (t == NULL) {
+        return 0;
+    }
+
     if (t->left == NULL && t->right == NULL) {
         return 0;
     } else {

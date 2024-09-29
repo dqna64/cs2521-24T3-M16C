@@ -9,6 +9,22 @@
  */
 
 int bstCountOdds(struct node *t) {
+    if (t == NULL) {
+        return 0;
+    }
+
+    int nLeft = bstCountOdds(t->left);
+    int nRight = bstCountOdds(t->right);
+
+    if (t->value % 2 == 1) {
+        return nLeft + nRight + 1;
+    } else {
+        return nLeft + nRight;
+    }
+
+}
+
+int bstCountOddsSimplified(struct node *t) {
   if (t == NULL) {
     return 0;
   } else if (t->value % 2 != 0) {
@@ -20,16 +36,13 @@ int bstCountOdds(struct node *t) {
 
 int main(void) {
   TreeNode tree = NULL;
-  tree = bstInsert(tree, 7);
-  tree = bstInsert(tree, 2);
-  tree = bstInsert(tree, 9);
-  tree = bstInsert(tree, 1);
-  tree = bstInsert(tree, 5);
-  tree = bstInsert(tree, 8);
-  tree = bstInsert(tree, 10);
-  tree = bstInsert(tree, 4);
+    tree = bstInsert(tree, 8);
+    tree = bstInsert(tree, 3);
+    tree = bstInsert(tree, 9);
+    tree = bstInsert(tree, 1);
+    tree = bstInsert(tree, 4);
   bstShow(tree);
 
   int numOddNodes = bstCountOdds(tree);
-  printf("Number of odd nodes in BST: %d\n", numOddNodes); // should be 4
+  printf("Number of odd nodes in BST: %d\n", numOddNodes); // should be 3
 }
