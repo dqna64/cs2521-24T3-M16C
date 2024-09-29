@@ -1,6 +1,6 @@
 #include "queue.h"
-
 #include "stack.h"
+#include <stdio.h>
 
 struct queue {
     Stack s1;
@@ -34,6 +34,11 @@ int QueueDequeue(Queue q) {
             int fromS1 = StackPop(q->s1);
             StackPush(q->s2, fromS1);
         }
+    }
+
+    if (StackIsEmpty(q->s2)) {
+        fprintf(stderr, "Queue is empty, cannot dequeue.\n");
+        exit(1);
     }
 
     return StackPop(q->s2);

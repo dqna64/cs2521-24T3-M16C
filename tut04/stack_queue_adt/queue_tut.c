@@ -1,5 +1,6 @@
 #include "queue.h"
 #include "stack.h"
+#include <stdio.h>
 
 struct queue {
     Stack s1;
@@ -25,7 +26,6 @@ void QueueEnqueue(Queue q, int item) {
 
 /**
  * Dequeue: Remove the front item and return.
- *
  */
 int QueueDequeue(Queue q) {
     // TODO
