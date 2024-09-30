@@ -14,7 +14,7 @@ int bstCountGreater(struct node *t, int val) {
         return 0;
     }
 
-    if (val >= t->value) {
+    if (t->value <= val) {
         return bstCountGreater(t->right, val);
     } else {
         return 1 + bstCountGreater(t->left, val) + bstCountGreater(t->right, val);
