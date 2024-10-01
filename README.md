@@ -2,7 +2,7 @@
 
 Code, whiteboards, images etc from our weekly tutorials.
 
-Example:
+Please open `.drawio` files in [draw.io](https://draw.io/)
 
 <img src="https://i.imgur.com/vkxADxz.png" width="480">
 
